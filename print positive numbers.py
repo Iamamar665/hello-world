@@ -1,4 +1,3 @@
-list=(1,2,-3,4,-5,6)
-for x in list:
-    if x >=0:
-        print(x, end = " ")
+list1 = list(map(int, input("Enter a multiple integer values seperated by spaces ").split()))  
+pos_nos = list(filter(lambda x: (x >= 0), list1)) 
+  print("Positive numbers in the list: ", *pos_nos)
